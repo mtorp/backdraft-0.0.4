@@ -1,0 +1,63 @@
+{
+  "name": "backdraft",
+  "description": "API starter kit for rapid response development. Based on Express.",
+  "version": "0.0.4",
+  "private": false,
+  "author": {
+    "email": "projects@firehatlabs.com",
+    "name": "Chris Compton, Fire Hat Labs"
+  },
+  "homepage": "http://backdraft.io",
+  "main": "backdraft.js",
+  "scripts": {
+    "pretest": "./node_modules/.bin/jshint lib test",
+    "test": "mocha -u tdd --ignore-leaks --reporter spec test/test.all.js",
+    "testgulp": "./node_modules/.bin/gulp test"
+  },
+  "dependencies": {
+    "chai": "^1.9.1",
+    "connect-mongo": "^0.4.1",
+    "cors": "^2.3.0",
+    "crypto": "0.0.3",
+    "express": "3.x",
+    "jade": "^1.3.1",
+    "jshint": "^2.4.4",
+    "log": "1.4.x",
+    "mongodb": "^1.4.3",
+    "mongoose": "^3.8.8",
+    "nodemailer": "^0.6.3",
+    "passport": "^0.2.0",
+    "passport-local": "*",
+    "passport-local-mongoose": "*",
+    "passport-oauth": "^1.0.0",
+    "request": "^2.34.0",
+    "stripe": "^2.5.2"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "jshint": "~2.5.0",
+    "gulp": "^3.6.2",
+    "gulp-nodemon": "^1.0.2"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FireHatLabs/backdraft.git"
+  },
+  "keywords": [
+    "ReST",
+    "express",
+    "restify",
+    "backdraft",
+    "firehatlabs"
+  ],
+  "licenses": [
+    {
+      "type": "The MIT License (MIT)",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ]
+}
